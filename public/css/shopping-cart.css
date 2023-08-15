@@ -1,0 +1,126 @@
+@import 'nav.css';
+@import'footer.css';
+
+body{
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: green;
+}
+
+.cart{
+    justify-content: space-between;
+}
+
+/**
+* ! style rules for label and some buttons
+**/
+
+.text-center{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.HomeBtn,
+.checkout,
+.removeAll {
+    background-color: #212529;
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.checkout {
+    background-color: green;
+}
+
+.removeAll {
+    background-color: red;
+}
+
+.bi-x-lg{
+    color: red;
+    font-weight: bold;
+}
+
+/* .details{
+    
+
+} */
+
+/**
+* ! style rules for shopping-cart
+**/
+
+.shopping-cart{
+    /* display: grid;
+    grid-template-columns: repeat(1, 320px);
+    justify-content: center;
+    gap: 15px; */
+    /* margin-bottom: 15px; */
+    display: grid;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+     justify-content: center; 
+
+}
+
+/**
+* ! style rules for cart-item
+**/
+
+.cart-item{
+     border: 2px solid black;
+     display: flex;
+    /*border-radius: 5px; */
+    /* width: fit-content; */
+    /* margin-bottom: 15px; */
+    
+}
+
+ .title-price-d{
+    width: 195px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   
+    
+} 
+
+.title-price{
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    
+}
+
+.cart-item-price{
+    background-color: #383838;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 6px;
+    
+
+}
+
+.buttons{
+    display: flex;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+h3{
+    margin-top: 10px;
+    /* border: 2px solid red;  */
+    /* position: relative; */
+    top: 10px;
+    color: #383838;
+}
+

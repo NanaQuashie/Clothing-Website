@@ -19,6 +19,7 @@
     padding: 10px 10vw;
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
 }
 
 .brand-logo{
@@ -33,6 +34,7 @@
 .search{
     width: 500px;
     display: flex;
+    
 }
 
 .search-box{
@@ -45,6 +47,7 @@
     background: none;
     color: #a9a9a9;
     outline: none;
+  
 }
 
 .search-btn{
@@ -70,12 +73,36 @@
 .nav-items a{
     margin-left: 20px;
     position: relative;
+    /* justify-content: space-between; */
 }
 
 .nav-items a img{
     width: 30px;
     cursor: pointer;
+    background-color: white;
+  
 
+}
+
+.cart{
+    margin-left: 30px;
+    background-color: #383838;
+    color: white;
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.cartAmount{
+    position: absolute;
+    top: -15px;
+    right: -9px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
 }
 
 .links-container{

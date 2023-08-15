@@ -1,6 +1,15 @@
 @import 'nav.css';
 @import'footer.css';
 
+i{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: green;
+}
+
 .hero-section{
     width: 100%;
     height: calc(100vh - 120px);
@@ -47,6 +56,7 @@
     display: flex;
     overflow: auto;
     scroll-behavior: smooth;
+    
 }
 
 .product-container::-webkit-scrollbar{
@@ -58,6 +68,7 @@
     width: 250px;
     height: 450px;
     margin-right: 40px;
+    
 }
 
 .product-image{
@@ -115,8 +126,22 @@
     padding-top: 10px;
 }
 
+.price-quantity{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
 .product-brand{
     text-transform: uppercase;
+    font-size: 25px;
 
 }
 
@@ -130,10 +155,22 @@
     margin: 5px 0;
 }
 
+h2{
+    font-size: 20px;
+}
+
 .price{
     font-weight: 900;
     font-size: 20px;
 
+}
+
+.bi-dash-lg {
+    color: red;
+}
+
+.bi-plus-lg {
+    color: green;
 }
 
 .actual-price{
@@ -207,4 +244,51 @@
 .collection:nth-child(3){
     grid-column: span 2;
     margin-bottom: 10px;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+.btn-header {
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid #2D9CDB;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-play {
+    display: block;
+    margin: 0 auto;
+    color: #2D9CDB;
+    font-size: 4em;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    text-align: center;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #383838;
+    border: none;
+    border-radius: 1em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #2D9CDB;
 }

@@ -4,7 +4,8 @@ const createNav = () => {
 
 nav.innerHTML = `
      <div class="nav">
-            <img src="img/dark-logo.png" class="brand-logo" alt="">
+          <a href="index.html"><img src="img/dark-logo.png" class="brand-logo" alt=""></a>
+            
             <div class="nav-items">
                 <div class="search">
                     <input type="text" class="search-box" 
@@ -20,7 +21,11 @@ nav.innerHTML = `
 
                 </div>
                 </a>
-                <a href="#"><img src="img/cart.png" alt=""></a>
+                <div class="cart">
+                <a href="shopping-cart.html"><i class="bi bi-cart4"> </i></a>
+               </a><div id="cartAmount" class="cartAmount">0</div>
+                
+                </div>
             </div>
         </div>
         <ul class="links-container">

@@ -145,6 +145,32 @@ app.get('/add-product', (req, res) => {
     res.sendFile(path.join(staticPath, "addProduct.html"));
 })
 
+// get products
+app.post('/get-products', (req, res) => {
+    const { email } = req.body;
+    const docRef = db.collection('products').where('email', '==', email);
+
+    docRef.get()
+    .then(products => {
+        if (products.empty) {
+            return res.json('no products');
+        }
+
+        const productArr = [];
+        products.forEach(item => {
+            const data = item.data();
+            data.id = item.id;
+            productArr.push(data);
+        });
+
+        res.json(productArr);
+    })
+    .catch(error => {
+        console.error('Error getting products:', error);
+        res.status(500).json('Error getting products');
+    });
+});
+
 //404 route
 app.get('/404', (req, res) => {
      res.sendFile(path.join(staticPath, "404.html"));
